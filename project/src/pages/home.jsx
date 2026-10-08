@@ -1,4 +1,4 @@
-function tes (){
+function Home (){
     return (
         <div>
         <h1>web saya</h1>
@@ -7,4 +7,4 @@ function tes (){
     )
 }
 
-export default tes;
+export default Home;
