@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom'
 
 
-const About = () => {
+const Home = () => {
   return (
-    <div style={{ padding: '40px 20px', fontFamily: 'Arial, sans-serif' }}>
-      <h1>About Us</h1>
+    <div className="p-4">
+      <h1 className='text-center'>Home</h1>
       <p>
         lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       </p>
@@ -21,9 +21,9 @@ const About = () => {
         <li>lorem ipsum dolor sit amet</li>
       </ul>
       <br />
-      <Link to="/">Kembali ke Beranda</Link>
+      <Link to="/about" className='underline'>About me</Link>
     </div>
   )
 }
 
-export default About
+export default Home;
