@@ -42,7 +42,7 @@ export default function Navbar() {
             {isOpen && (
                 <div className="md:hidden flex flex-col items-left w-full text-left gap-6">
                     <Link to="/" onClick={() => setIsOpen(false)} className="flex items-center gap-2 font-bold text-xl text-black">
-                        <img src={logo} alt="logo" className="h-8 w-auto object-contain"/>
+                        <img src={logo} alt="logo company" className="h-8 w-auto object-contain"/>
                         <span className="text-2xl font-bold tracking-tight">MTH Group</span>
                     </Link>
 
