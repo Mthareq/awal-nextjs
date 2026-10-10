@@ -8,18 +8,20 @@ import Contact from './pages/contact'
 import Galeri from './pages/galeri'
 import Services from './pages/services'
 import Navbar from './components/navbar'
+import Footer from './components/footer'
 
 function App() {
   return (
     <div className=''>
       <Navbar/>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/galeri" element={<Galeri />} />
-        <Route path="/services" element={<Services />} />
-      </Routes>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/galeri" element={<Galeri />} />
+          <Route path="/services" element={<Services />} />
+        </Routes>
+      <Footer/>
     </div>
   
   )

@@ -1,32 +1,32 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../assets/react.svg'
+import logo from '../assets/desain.png'
 
 export default function Navbar() {
 
     const[isOpen, setIsOpen] = useState(false)
 
     return (
-        <header className="fixed top-6 left-0 right-0 z-50 flex justify-center">
+        <header className="fixed top-6 left-0 right-0 z-50 flex justify-center mx-2">
         <nav className="w-full max-w-7xl px-6 py-3 bg-white/80 backdrop-blur-md border border-gray-200 shadow-lg rounded-3xl md:rounded-full transition-all duration-300">
             <div className="flex items-center justify-between w-full">
 
                 <div className={isOpen ? "hidden md:flex" : "flex"}>
                     <Link to="/" className="flex items-center gap-2 font-bold text-xl text-black">
                         <img src={logo} alt="logo" className="h-8 w-auto object-contain"/>
-                        <span className="text-2xl font-bold tracking-tight">MTH Group</span>
+                        <span className="text-lg md:text-2xl font-bold tracking-tight">MTH</span>
                     </Link>
                 </div>
 
                 <div className="hidden md:flex items-center gap-8 text-sm tracking-wider font-medium text-gray-600 uppercase">
                     <Link to="/" className="hover:text-black transition-colors">Home</Link>
                     <Link to="/galeri" className="hover:text-black transition-colors">Galeri</Link>
-                    <Link to="/services" className="hover:text-black transition-colors">Services ▾</Link>
+                    <Link to="/services" className="hover:text-black transition-colors">Services</Link>
                     <Link to="/about" className="hover:text-black transition-colors">About</Link>
                     <Link to="/contact" className="hover:text-black transition-colors">Contact</Link>
                 </div>
 
-                <Link to="/contact" className="hidden md:inline-block px-5 py-2 text-sm font-semibold text-white bg-black rounded-full hover:bg-gray-800 transition-all">
+                <Link to="/contact" className="hidden md:inline-block px-5 py-2 text-sm font-semibold text-white bg-black rounded-lg hover:bg-gray-800 transition-all">
                     Let's talk
                 </Link>
 
