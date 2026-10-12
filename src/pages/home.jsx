@@ -74,8 +74,8 @@ const Home = () => {
           <div className="col-start-1 row-start-1 z-10 w-full max-w-3xl mx-auto flex flex-col items-center gap-6 py-8">
             <h1 className="col-start-1 row-start-1 text-center w-full max-w-4xl mx-auto pt-32 md:pt-28">
               <div className="text-4xl md:text-7xl font-bold">
-                <p>We build the digital</p>
-                <p>Data Center</p>
+                <p>We build the </p>
+                <p>Digital Data Center</p>
               </div>
             </h1>
             <p className="text-base md:text-lg text-gray-600 font-normal leading-relaxed max-w-2xl px-8">

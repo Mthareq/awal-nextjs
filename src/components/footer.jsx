@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import logo from '../assets/desainputih.png'
 
 const Footer = () => {
 
@@ -11,10 +12,11 @@ const navLinks = [
 ];
 
 const socialLinks = [
-    { id: 1, name: 'Instagram', url: 'https://instagram.com' },
+    { id: 1, name: 'Instagram', url: 'https://instagram.com/oyiktrq' },
     { id: 2, name: 'LinkedIn', url: 'https://linkedin.com' },
-    { id: 3, name: 'Twitter / X', url: 'https://twitter.com' },
+    { id: 3, name: 'Link Tree', url: 'https://oyiktrq.straw.page/' },
 ];
+
 
     return (
         <footer className="w-full bg-black text-white pt-16 pb-8 px-6 md:px-16 border-t border-gray-800 font-sans">
@@ -23,11 +25,11 @@ const socialLinks = [
                     <div>
                         <div className="w-10 h-0.5 bg-[#C8FF00] mb-4"></div>
                         <h2 className="text-2xl md:text-4xl font-bold tracking-tight">
-                        Have an idea? Let's talk.
+                        Do you want to order cloud?
                         </h2>
                     </div>
-                <Link to="/contact" className="px-6 py-3 bg-[#C8FF00] text-black font-semibold rounded-lg hover:bg-white transition-all text-sm md:text-base flex items-center gap-2">
-                Get in touch
+                <Link to="/contact" className="px-6 py-3 bg-[#C8FF00] text-black font-semibold rounded-lg hover:bg-black hover:text-white transition-all text-sm md:text-base flex items-center gap-2">
+                Let's talk
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                     </svg>
@@ -36,7 +38,10 @@ const socialLinks = [
 
             <div className="grid grid-cols-1 md:grid-cols-4 gap-10 py-12">
                 <div className="md:col-span-2">
-                    <h3 className="text-xl font-bold tracking-wider mb-4">NARRATIV.</h3>
+                    <Link to="/" className="flex items-center gap-2 font-bold text-xl text-white">
+                        <img src={logo} alt="logo" className="h-8 w-auto object-contain"/>
+                        <span className="text-lg md:text-2xl font-bold tracking-tight">MTH</span>
+                    </Link>
                     <p className="text-gray-400 text-sm leading-relaxed max-w-sm">
                     We treat strategy as the source of creative, finding the truest version of your story.
                     </p>
@@ -56,16 +61,11 @@ const socialLinks = [
                 </div>
 
                 <div>
-                    <h4 className="font-mono text-xs text-[#C8FF00] uppercase tracking-widest mb-4">Socials</h4>
+                    <h4 className="font-mono text-xs text-[#C8FF00] uppercase tracking-widest mb-4">Connect</h4>
                     <ul className="space-y-2 text-sm text-gray-300">
                         {socialLinks.map((social) => (
                             <li key={social.id}>
-                            <a
-                                href={social.url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="hover:text-[#C8FF00] transition-colors"
-                            >
+                            <a href={social.url} target="_blank" rel="noopener noreferrer" className="hover:text-[#C8FF00] transition-colors">
                                 {social.name}
                             </a>
                             </li>
@@ -74,12 +74,8 @@ const socialLinks = [
                 </div>
             </div>
 
-            {/* SECTION BAWAH: Copyright */}
             <div className="pt-8 border-t border-gray-800/60 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 gap-4 font-mono">
-                <p>© {new Date().getFullYear()} NARRATIV. All rights reserved.</p>
-                <p className="hover:text-gray-400 transition-colors cursor-pointer">
-                Designed with React & Tailwind CSS
-                </p>
+                <p>© 2026 MTH. All rights reserved.</p>
             </div>
             </div>
         </footer>
