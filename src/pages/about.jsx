@@ -64,10 +64,10 @@ const About = () => {
 
   return (
     <main>
-      <section className="py-24 md:py-24 px-4 md:px-30">
+      <section className="py-24 px-4 md:px-30">
         <div className="py-16 md:py-20">
           <p className="text-base uppercase font-mono">01 / About MTH</p>
-          <h1 className="py-8 md:py-8 md:pr-180 font-sans leading-[1.2] text-4xl md:text-7xl font-bold"> 
+          <h1 className="py-8 md:pr-180 font-sans leading-[1.2] text-4xl md:text-7xl font-bold"> 
             A facility built on one idea
           </h1>
           <p className="text-xl text-gray-700 md:pr-128">
