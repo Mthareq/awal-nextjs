@@ -26,7 +26,7 @@ export default function Navbar() {
                     <Link to="/contact" className="hover:text-black transition-colors">Contact</Link>
                 </div>
 
-                <Link to="/contact" className="hidden md:inline-block px-5 py-2 text-sm font-semibold text-white bg-black rounded-lg hover:bg-gray-800 transition-all">
+                <Link to="/contact" className="hidden md:inline-block px-5 py-2 text-sm font-semibold text-white bg-black rounded-lg hover:text-black hover:bg-[#C8FF00] transition-all">
                     Let's talk
                 </Link>
 
