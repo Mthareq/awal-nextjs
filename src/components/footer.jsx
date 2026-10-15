@@ -4,17 +4,49 @@ import logo from '../assets/desainputih.png'
 const Footer = () => {
 
 const navLinks = [
-    { id: 1, name: 'Home', path: '/' },
-    { id: 2, name: 'Services', path: '/services' },
-    { id: 3, name: 'Galeri', path: '/galeri' },
-    { id: 4, name: 'About', path: '/about' },
-    { id: 5, name: 'Contact', path: '/contact' },
+    {
+        id: 1, 
+        name: 'Home', 
+        path: '/' 
+    },
+    { 
+        id: 2, 
+        name: 'Services', 
+        path: '/services' 
+    },
+    {
+        id: 3,
+        name: 'Galeri', 
+        path: '/galeri'
+    },
+    {
+        id: 4,
+        name: 'About', 
+        path: '/about'
+    },
+    {
+        id: 5,
+        name: 'Contact', 
+        path: '/contact' 
+    }
 ];
 
 const socialLinks = [
-    { id: 1, name: 'Instagram', url: 'https://instagram.com/oyiktrq' },
-    { id: 2, name: 'LinkedIn', url: 'https://linkedin.com' },
-    { id: 3, name: 'Link Tree', url: 'https://oyiktrq.straw.page/' },
+    {
+        id: 1, 
+        name: 'Instagram', 
+        url: 'https://instagram.com/oyiktrq' 
+    },
+    {
+        id: 2, 
+        name: 'LinkedIn', 
+        url: 'https://www.linkedin.com/in/mohamad-thareq-hanne-33003837b?utm_source=share_via&utm_content=profile&utm_medium=member_android'
+    },
+    {
+        id: 3, 
+        name: 'Link Tree', 
+        url: 'https://oyiktrq.straw.page/'
+    }
 ];
 
 

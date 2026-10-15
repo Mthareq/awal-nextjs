@@ -1,17 +1,19 @@
 import background from "../assets/bg.svg";
 import { Link } from "react-router-dom";
-import datacenter1 from "../assets/datacenter1.svg"
+import datacenter1 from "../assets/datacenter1.jpg"
+import datacenter2 from "../assets/datacenter2.jpg"
 
 const Home = () => {
+  
   const buttonView = [
     {
-      id: 1,
+      id: "1",
       label: "See the work",
-      to: "/service",
+      to: "/services",
       className: "bg-[#C8FF00] text-black hover:bg-black hover:text-white"
     },
     {
-      id: 2,
+      id: "2",
       label: "Let's talk",
       to: "/contact",
       className: "bg-white text-black border border-black hover:bg-black hover:text-white"
@@ -19,51 +21,39 @@ const Home = () => {
   ];
   const gridGrowth = [
     {
-      id: 1,
+      id: "1",
       label: "100 MW",
       deskripsi: "Capacity"
     },
     {
-      id: 2,
+      id: "2",
       label: "10+",
       deskripsi: "Industries Served"
     },
     {
-      id: 3,
+      id: "3",
       label: "3",
       deskripsi: "Branch Office"
     },
     {
-      id: 4,
+      id: "4",
       label: "2026",
       deskripsi: "Founded in Bandung"
     }
   ]
   const gridData = [
     {
-      id: 1,
+      id: "1",
       label: "data center1",
       Image: datacenter1,
-      deskripsi: "Capacity"
+      deskripsi: "Indonesia"
     },
     {
-      id: 2,
+      id: "2",
       label: "data center2",
-      Image: datacenter1,
-      deskripsi: "Industries Served"
+      Image: datacenter2,
+      deskripsi: "Singapore"
     },
-    {
-      id: 3,
-      label: "data center3",
-      Image: datacenter1,
-      deskripsi: "Branch Office"
-    },
-    {
-      id: 4,
-      label: "data center4",
-      Image: datacenter1,
-      deskripsi: "Founded in Bandung"
-    }
   ]
 
   return (
@@ -72,12 +62,12 @@ const Home = () => {
         <div className="grid place-items-center w-full max-w-5xl mx-auto">
           <img src={background} alt="background" className="-mt-32 md:mt-0 col-start-1 row-start-1 z-0 -mb-40 mx-auto w-full md:w-[90%] max-w-4xl h-auto opacity-5 pointer-events-none"/>
           <div className="col-start-1 row-start-1 z-10 w-full max-w-3xl mx-auto flex flex-col items-center gap-6 py-8">
-            <h1 className="col-start-1 row-start-1 text-center w-full max-w-4xl mx-auto pt-32 md:pt-28">
-              <div className="text-4xl md:text-7xl font-bold">
-                <p>We build the </p>
-                <p>Digital Data Center</p>
+              <div className="text-4xl md:text-7xl font-bold ">
+                <h1 className="col-start-1 row-start-1 text-center w-full max-w-4xl mx-auto pt-32 md:pt-28">
+                    <p>We build the </p>
+                    <p>Digital Data Center</p>
+                </h1>
               </div>
-            </h1>
             <p className="text-base md:text-lg text-gray-600 font-normal leading-relaxed max-w-2xl px-8">
               An integrated data center infrastructure provider in Southeast Asia,
               offering colocation, cloud, connectivity, and digital security
@@ -124,9 +114,8 @@ const Home = () => {
         <div className="grid md:grid-cols-2 gap-6 ">
           {gridData.map((gd)=>(
             <div key={gd.id} className="group relative rounded-2xl p-3 flex flex-col justify-between">
-              <div className="relative w-full h-64 rounded-xl bg-gray-100 ransition-all duration-300 ease-out transform
-                    group-hover:-translate-y-2 group-hover:shadow-[0_15px_30px_rgba(0,0,0,0.25)] group-hover:z-10">
-                <img src={gd.Image} alt={gd.label} className="w-full h-full object-cover rounded-xl"/>
+              <div className="w-full h-88 overflow-hidden bg-gray-100">
+                <img src={gd.Image} alt={gd.label} className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"/>
               </div>
               <p className="text-base px-6 pb-6 pt-2 font-mono uppercase font-semibold">{gd.deskripsi}</p>
             </div>
