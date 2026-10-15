@@ -8,7 +8,7 @@
 ---
 
 ## Deskripsi Singkat
-Website *company profile* dan portofolio interaktif untuk perusahaan infrastruktur teknologi dan pusat data bernama **MTH Group**. Menyediakan informasi tentang kapasitas fasilitas *data center*, tipe data yang dikelola, deretan layanan unggulan (*Brand Strategy, Infrastructure, Cloud & Digital Services*), galeri fasilitas, daftar klien utama (*Selected Clients*), serta formulir pengajuan kontak.
+Website *company profile* dan portofolio interaktif untuk perusahaan infrastruktur teknologi dan pusat data bernama **MTH Group**. Menyediakan informasi tentang kapasitas fasilitas *data center*, data yang dikelola, beberapa layanan unggulan (*Brand Strategy, Infrastructure, Cloud & Digital Services*), galeri fasilitas, daftar klien utama (*Selected Clients*), serta formulir pengajuan kontak.
 
 Website ini menggunakan color pallet **Lime Neon (`#C8FF00`)**, dan tata letak responsif menggunakan **React**, **Vite**, dan **Tailwind CSS**
 
