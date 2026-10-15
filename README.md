@@ -1,22 +1,58 @@
-# React + Vite
+# Project Promnet1 — Website Perusahaan Data Center (MTH Group)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Identitas
+- **Nama** : Mohamad Thareq Hanne
+- **NIM** : 2506663
+- **Kelas** : 3C
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Deskripsi Singkat
+Website *company profile* dan portofolio interaktif untuk perusahaan infrastruktur teknologi dan pusat data bernama **MTH Group**. Menyediakan informasi tentang kapasitas fasilitas *data center*, tipe data yang dikelola, deretan layanan unggulan (*Brand Strategy, Infrastructure, Cloud & Digital Services*), galeri fasilitas, daftar klien utama (*Selected Clients*), serta formulir pengajuan kontak.
 
-## React Compiler
+Website ini menggunakan color pallet **Lime Neon (`#C8FF00`)**, dan tata letak responsif menggunakan **React**, **Vite**, dan **Tailwind CSS**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Fitur Utama
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Beranda (Home)**:
+  - Ringkasan *highlight* kapasitas infrastruktur dan pengenalan perusahaan.
+- **Tentang Kami (About)**:
+  - Visi, misi, standar keamanan 24/7 *Security Operations Center*, serta profil tim pengembang.
+- **Layanan (Services)**:
+  - Tabel daftar layanan terstruktur menggunakan perulangan `.map()` dengan efek *hover*.
+- **Portofolio & Galeri (Gallery / Portfolio)**:
+  - *superiority facilities* ruangan data center, maintenence, dan data server
+  - Grid *Selected Clients* (Daikin, Pluang, Blibli, Haier, XL Axiata, Astra, SMBC, Siloam, Bybit, dll.) yang rapi dan responsif dengan fitur *grayscale hover*.
+- **Kontak (Contact)**:
+  - *Interactive Form* dengan tombol toggle *multi-select* layanan dan *single-select* rentang *budget* yang berubah warna neon saat aktif.
+  - Kartu informasi kontak (*Email, WhatsApp, Office Locations, Social Media*, dan *Office Hours*).
 
-Nama: Mohamad Thareq Hanne
-NIM: 2506663
-Kelas: C
+---
 
-website ini adalah profil website perusahaan teknologi yang bergerak dibidang data center
+## Teknologi yang Digunakan
+
+- **React + Vite** (Frontend Framework & Build Tool)
+- **Tailwind CSS** (Utility-first CSS Framework)
+- **SVG/ JPG / PNG Assets** (Optimized Client Logos & Infrastructure Mockups)
+
+---
+
+## Struktur Folder
+
+```text
+src/
+├── assets/
+├── components/
+├── data/
+├── page/
+├── App.jsx
+└── main.jsx
+
+## Cara Menjalankan Project
+```bash
+npm install
+npm run dev
+```
+Buka `http://localhost:5173` di browser.
